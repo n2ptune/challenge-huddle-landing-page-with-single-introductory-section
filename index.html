@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      html,
+      body {
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      :root {
+        --color-violet: hsl(257, 40%, 49%);
+      }
+
+      body {
+        background: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: var(--color-violet);
+      }
+
+      header {
+        padding: 2rem;
+      }
+
+      header img {
+        width: 185px;
+      }
+
+      main {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+      }
+
+      main .main-image {
+        width: 100%;
+      }
+
+      main .main-logo-wrap {
+        flex-basis: 100%;
+      }
+
+      main .des-wrap {
+        flex-basis: 100%;
+        margin: 4rem 1.5rem;
+      }
+
+      .font-headings,
+      .font-body {
+        color: rgba(255, 255, 255, 0.83);
+      }
+
+      .font-headings {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.9rem;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .font-body {
+        font-size: 1.3rem;
+        text-align: center;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      .des-wrap .body {
+        margin-top: 2rem;
+      }
+
+      .button-wrap {
+        text-align: center;
+        margin-top: 2rem;
+      }
+
+      .button {
+        cursor: pointer;
+        display: inline-block;
+        padding: 1rem 4.5rem;
+        background-color: white;
+        color: var(--color-violet);
+        border-radius: 100px;
+        font-size: 1.2rem;
+        box-shadow: 0 5px 13px 1px rgba(0, 0, 0, 0.25);
+      }
+
+      section.icon-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+      }
+
+      .icon-wrapper .icons > * {
+        width: 25px;
+        height: 25px;
+        padding: 0.7rem;
+        border: 1px solid white;
+        border-radius: 50%;
+        color: white;
+        margin: 0 0.5rem;
+      }
+
+      @media screen and (min-width: 1000px) {
+        body {
+          background: url(./images/bg-desktop.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-color: var(--color-violet);
+        }
+        header {
+          padding: 4rem;
+        }
+        header img {
+          width: auto;
+        }
+        main {
+          padding: 2rem 5rem;
+          flex-direction: row;
+          justify-content: center;
+        }
+        main .main-logo-wrap {
+          flex-basis: 45%;
+        }
+
+        main .des-wrap {
+          flex-basis: 30%;
+          margin: 5rem;
+        }
+        .font-headings {
+          text-align: left;
+          font-size: 3rem;
+        }
+        .font-body {
+          text-align: left;
+        }
+        .button-wrap {
+          text-align: left;
+        }
+        section.icon-wrapper {
+          top: 1rem;
+          justify-content: flex-end;
+          padding: 0 10rem;
+        }
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9d1603d45e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="" />
+    </header>
+    <main>
+      <div class="main-logo-wrap">
+        <img
+          src="./images/illustration-mockups.svg"
+          alt=""
+          class="main-image"
+        />
+      </div>
+      <div class="des-wrap">
+        <div class="headings font-headings">
+          Build The Community<br />Your Fans Will Love
+        </div>
+        <div class="body font-body">
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </div>
+        <div class="button-wrap">
+          <div class="button">
+            Register
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="icon-wrapper">
+      <div class="icons">
+        <i class="fab fa-facebook-f fa-lg"></i>
+        <i class="fab fa-twitter fa-lg"></i>
+        <i class="fab fa-instagram fa-lg"></i>
+      </div>
+    </section>
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer> -->
+  </body>
+</html>
